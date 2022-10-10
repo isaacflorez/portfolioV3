@@ -229,7 +229,6 @@ i {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* height: auto; */
 }
 .card__img img {
   height: 200px;
