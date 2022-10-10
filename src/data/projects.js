@@ -2,7 +2,7 @@
 // proper <Project /> component in ProjectList.js
 const projects = [
     {
-        title : 'Tic-Tac-Toe',
+        title : 'TicTacToe',
         info : 'Perfect tic tac toe AI built using the minimax game theory. Potential boards are scored to find best move.',
         tech: ['html', 'css', 'react'],
         image: './images/tictactoe.png',
