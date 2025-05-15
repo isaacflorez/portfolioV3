@@ -3,7 +3,7 @@ function AboutMe() {
         <div className="about">
             <h1 className="section-title">//About Me</h1>
             <div className="about__content">
-                <p className="about__text">Hello, I am Isaac!</p>
+                <p className="about__text">Hello, I am Isaac Florez!</p>
             </div>
         </div>
     )
