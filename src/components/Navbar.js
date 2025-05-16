@@ -7,6 +7,7 @@ function NavList(props) {
     const linkedin = "https://www.linkedin.com/in/isaac-florez-4bb57616b/"
     return (
         <ul className={props.toggleClass} >
+            <li className="nav__item"><a className="nav__link" href={Pdf} target="_blank">Blog</a></li>
             <li className="nav__item"><a className="nav__link" href={Pdf} target="_blank">Resume</a></li>
             <li className="nav__item"><a className="nav__link" href="#project-section" >Projects</a></li>
             <li className="nav__item"><a className="nav__link" href={linkedin} target="_blank" >Contact</a></li>
