@@ -7,30 +7,15 @@ import App from "../App.js"
 function NavList(props) {
     const linkedin = "https://www.linkedin.com/in/isaac-florez-4bb57616b/"
     return (
-
-        <Router>
-            <ul className={props.toggleClass}>
-                <li className="nav_item"><Link className="nav__link" to="/">Home</Link></li>
-
-            </ul>
-            <Routes>
-                <Route path="/blank" element={<h1>Hello blank</h1>} />
-                <Route path="/" element={<App />} />
-            </Routes>
-
-        </Router>
-        
-
-    )
-        {/* 
         <ul className={props.toggleClass} >
             <li className="nav__item"><a className="nav__link" href={Pdf} target="_blank">Blog</a></li>
             <li className="nav__item"><a className="nav__link" href={Pdf} target="_blank">Resume</a></li>
             <li className="nav__item"><a className="nav__link" href="#project-section" >Projects</a></li>
             <li className="nav__item"><a className="nav__link" href={linkedin} target="_blank" >Contact</a></li>
-            
         </ul>
-        */}
+
+    )
+        
     
 }
 
