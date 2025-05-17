@@ -14,7 +14,7 @@ function NavList(props) {
 
             </ul>
             <Routes>
-                <Route path="/blank" element={<h1>Hello blank page</h1>} />
+                <Route path="/blank" element={<h1>Hello blank</h1>} />
                 <Route path="/" element={<App />} />
             </Routes>
 
