@@ -1,6 +1,10 @@
+import Header from "../components/Header"
 function BlogPage () {
     return (
-        <h1>Blog page</h1>
+        <>
+            <Header />
+            <h1>Blog page</h1>
+        </>
     )
 }
 
