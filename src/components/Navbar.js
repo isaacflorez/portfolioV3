@@ -15,8 +15,8 @@ function NavList(props) {
     return (
         <ul className={props.toggleClass} >
             <li className="nav__item"><button className="nav__link" onClick={() => navigate('/blog')}>Blog</button></li>
-            <li className="nav__item"><a className="nav__link" href={Pdf} target="_blank">Resume</a></li>
-            <li className="nav__item"><button className="nav__link" onClick={() => navigate('/#projects')}>Projects</button></li>
+            
+            <li className="nav__item"><button className="nav__link" onClick={() => navigate('/projects')}>Projects</button></li>
             <li className="nav__item"><a className="nav__link" href={linkedin} target="_blank" >Contact</a></li>
         </ul>
 
