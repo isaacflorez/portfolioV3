@@ -2,15 +2,21 @@ import { useState } from "react"
 import Pdf from '../documents/resume.pdf'
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom"
 import App from "../App.js"
+import { useNavigate } from "react-router-dom"
+
+
+
 // props contains a list of classes which change depending
 // on width of screen for mobile or desktop view
 function NavList(props) {
+    // navigate hook is used to change the page url
+    const navigate = useNavigate();
     const linkedin = "https://www.linkedin.com/in/isaac-florez-4bb57616b/"
     return (
         <ul className={props.toggleClass} >
-            <li className="nav__item"><a className="nav__link" href={Pdf} target="_blank">Blog</a></li>
+            <li className="nav__item"><button className="nav__link" onClick={() => navigate('/blog')}>Blog</button></li>
             <li className="nav__item"><a className="nav__link" href={Pdf} target="_blank">Resume</a></li>
-            <li className="nav__item"><a className="nav__link" href="#project-section" >Projects</a></li>
+            <li className="nav__item"><button className="nav__link" onClick={() => navigate('/#projects')}>Projects</button></li>
             <li className="nav__item"><a className="nav__link" href={linkedin} target="_blank" >Contact</a></li>
         </ul>
 
@@ -20,6 +26,8 @@ function NavList(props) {
 }
 
 function Navbar() {
+    // navigate hook is used to change the page url
+    const navigate = useNavigate();
     // state used to keep track of having the main nav
     // visible on desktop view and hidden during mobile view
     const [state, setState] = useState('nav__list')
@@ -36,7 +44,7 @@ function Navbar() {
             <div className="container">
                 <nav className="nav">
                     <div className="nav__mobile">
-                        <span className="logo">//Developer Isaac</span>
+                        <span className="logo" onClick={() => navigate('/')}>//Developer Isaac</span>
                         <div className="nav__toggle" onClick={toggle}>
                             <div className="toggle__line"></div>
                             <div className="toggle__line"></div>

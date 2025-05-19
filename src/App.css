@@ -80,6 +80,15 @@
 .nav__link:hover{
   color: white;
 }
+
+button.nav__link{
+  background: none;
+  border: none;
+}
+
+.logo{
+  cursor:pointer
+}
 /* Hero */
 .hero {
   background-color: #f8f9fa;
