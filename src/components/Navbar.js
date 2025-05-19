@@ -44,7 +44,7 @@ function Navbar() {
             <div className="container">
                 <nav className="nav">
                     <div className="nav__mobile">
-                        <span className="logo" onClick={() => navigate('/')}>//Developer Isaac</span>
+                        <span className="logo" onClick={() => navigate('/')}>//Always a WIP</span>
                         <div className="nav__toggle" onClick={toggle}>
                             <div className="toggle__line"></div>
                             <div className="toggle__line"></div>
