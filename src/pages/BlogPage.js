@@ -1,9 +1,10 @@
 import Header from "../components/Header"
+import EmailForm from "../components/EmailForm"
 function BlogPage () {
     return (
         <>
             <Header />
-            <h1>Blog page</h1>
+            <EmailForm />
         </>
     )
 }

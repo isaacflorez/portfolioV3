@@ -1,7 +1,4 @@
 import { useState } from "react"
-import Pdf from '../documents/resume.pdf'
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom"
-import App from "../App.js"
 import { useNavigate } from "react-router-dom"
 
 
